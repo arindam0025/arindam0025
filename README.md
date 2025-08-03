@@ -81,7 +81,7 @@
 
 <div align="center">
   <h3 align="center">Connect with Me</h3>
-  <a href="https://www.linkedin.com/in/arindam0025/">
+  <a href="https://www.linkedin.com/in/arindam-nag-/">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn" />
   </a>
   <a href="https://twitter.com/arindam0025">
@@ -91,11 +91,9 @@
 
 ###
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arindam0025/arindam0025/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arindam0025/arindam0025/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/arindam0025/arindam0025/output/pacman-contribution-graph.svg">
-</picture>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arindam0025&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="Contribution Graph" />
+</div>
 
 ### 
 
