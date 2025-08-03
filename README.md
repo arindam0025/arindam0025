@@ -39,7 +39,7 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
+<img align="right" height="200" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Coding animation" />
 
 ###
 
@@ -51,7 +51,27 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/arindam0025/arindam0025/output/snake.svg" alt="Snake animation" />
+<div align="center">
+  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300" alt="Data animation" />
+</div>
+
+###
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=arindam0025&theme=radical&hide_border=true" alt="Streak stats" />
+</div>
+
+###
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=arindam0025&theme=radical&no-frame=true&no-bg=false&margin-w=4" alt="Trophy stats" />
+</div>
+
+###
+
+<div align="center">
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="500" alt="Finance animation" />
+</div>
 
 ###
 
