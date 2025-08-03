@@ -1,23 +1,57 @@
-<h1 align="center">Hey 👋 What's Up?</h1>
+<h1 align="left">Hey 👋 What's Up?</h1>
 
 ###
 
-<div align="center">
-  <h2 align="center">About Me</h2>
-  <p align="center">
-    I'm a data analyst and developer with a keen focus on investment and quantitative finance. My projects revolve around utilizing Python, R, and AI/ML techniques to optimize portfolios and drive financial strategies.
-  </p>
-  <p align="center">
-    Leveraging technologies like TensorFlow and SQL, I automate trading strategies and develop predictive models, enhancing decision-making in investment management.
-  </p>
+<p align="left">I'm Arindam, a data analyst and developer from India, specializing in investment and quantitative finance.</p>
+
+###
+
+<h2 align="left">About Me</h2>
+
+###
+
+<p align="left">✨ Creating investment strategies since 2020<br>📚 Currently enhancing my AI/ML skills in finance<br>🎯 Goals: Automate trading strategies and predict market trends<br>🎲 Fun fact: I love decoding market puzzles!</p>
+
+###
+
+<h2 align="left">Technologies I Use</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" height="40" alt="r logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="40" alt="sql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="tensorflow logo"  />
 </div>
 
 ###
 
 <div align="center">
-  <h3 align="center">Skills & Technologies</h3>
-  <img src="https://skillicons.dev/icons?i=python,r,sql,nodejs,mongodb,tensorflow,pycharm,aws,ts,nextjs,tailwind,storybook,graphql,go,rust,nestjs" height="60" alt="Skills" />
+  <img src="https://github-readme-stats.vercel.app/api?username=arindam0025&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=arindam0025&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
 </div>
+
+###
+
+<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
+
+###
+
+<div align="left">
+  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+  <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitter logo"  />
+  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+</div>
+
+###
+
+<img src="https://raw.githubusercontent.com/arindam0025/arindam0025/output/snake.svg" alt="Snake animation" />
 
 ###
 
