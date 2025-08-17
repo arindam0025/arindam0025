@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I'm Arindam, a data analyst and developer from India, specializing in investment and quantitative finance.</p>
+<p align="left">I'm Arindam, a data analyst and specializing in investment and quantitative finance.</p>
 
 ###
 
