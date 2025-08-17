@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Creating investment strategies since 2020<br>📚 Currently enhancing my AI/ML skills in finance<br>🎯 Goals: Automate trading strategies and predict market trends<br>🎲 Fun fact: I love decoding market puzzles!</p>
+<p align="left">✨ </p>
 
 ###
 
