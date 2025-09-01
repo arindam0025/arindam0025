@@ -1,14 +1,11 @@
 # 💫 About Me:
 👋 Hi, I’m Arindam Nag<br>💡 Finance + Tech Enthusiast | 📊 Data & Investment Analyst | 🤖 AI & Quant Explorer<br><br>🚀 Skills & Interests:<br><br>Finance: Investment Analysis, Risk Modeling, Portfolio Optimization, ESG Analytics<br><br>Tech: Python, SQL, R, MATLAB, Tableau, Power BI, SAP, Excel, NumPy, Pandas<br><br>AI/ML: Algorithmic Trading, NLP for ESG & Greenwashing Detection, Predictive Modeling<br><br>Extras: Web & Graphic Design, UI/UX, Digital Marketing (Google Ads & Analytics Certified)<br><br>🎓 BBA Financial Technology @ Christ University<br>✨ Passionate about building tools that merge finance, AI, and design to create smarter solutions.
 
----
-
 ## 🌀 Fun Animations  
-![Pacman](https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/main/Emojis/Activities/Pac-Man.gif)  
-![Mario](https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/main/Emojis/Activities/Mario.gif)  
-![Rocket](https://raw.githubusercontent.com/Tarikul-Islam-Anik/Microsoft-Teams-Animated-Emojis/main/Emojis/Travel%20and%20places/Rocket.gif)  
+<img src="https://media.giphy.com/media/hqU2KkjW5bE2v2Z7Q2/giphy.gif" width="120"/>  
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="120"/>  
+<img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="120"/>  
 
----
 
 
 
@@ -36,34 +33,5 @@
 
 
 ---
-
-👉 And for the **Snake Animation to work**, add this GitHub Action file in your repo:  
-
-**`.github/workflows/snake.yml`**  
-```yml
-name: Generate Snake
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: arindam0025
-          outputs: dist/snake.svg
-
-      - name: Push Snake
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: GitHub Action
-          message: "Generated snake animation"
-          add: "dist/snake.svg"
+![snake gif](https://github.com/arindam0025/arindam0025/blob/output/github-contribution-grid-snake.svg)
 
