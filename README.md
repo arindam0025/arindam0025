@@ -1,5 +1,3 @@
-# 💫 About Me:
-👋 Hi, I’m Arindam Nag<br>💡 Finance + Tech Enthusiast | 📊 Data & Investment Analyst | 🤖 AI & Quant Explorer<br><br>🚀 Skills & Interests:<br><br>Finance: Investment Analysis, Risk Modeling, Portfolio Optimization, ESG Analytics<br><br>Tech: Python, SQL, R, MATLAB, Tableau, Power BI, SAP, Excel, NumPy, Pandas<br><br>AI/ML: Algorithmic Trading, NLP for ESG & Greenwashing Detection, Predictive Modeling<br><br>Extras: Web & Graphic Design, UI/UX, Digital Marketing (Google Ads & Analytics Certified)<br><br>🎓 BBA Financial Technology @ Christ University<br>✨ Passionate about building tools that merge finance, AI, and design to create smarter solutions.
 
 ## 🌀 Fun Animations  
 <img src="https://media.giphy.com/media/hqU2KkjW5bE2v2Z7Q2/giphy.gif" width="120"/>  
