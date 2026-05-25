@@ -10,6 +10,7 @@
 
 <img src="05_bot_feed.png" width="100%"/>
 
+
 <img src="06_connect.png" width="100%"/>
 
 </div>
