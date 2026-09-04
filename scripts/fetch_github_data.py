@@ -316,6 +316,111 @@ def build_live_payload(login: str, token: str, start_date: date, end_date: date)
     }
 
 
+def fetch_public_unauthenticated_payload(login: str, start_date: date, end_date: date) -> Dict[str, Any]:
+    """Fetch public contributions and repository statistics without requiring a GITHUB_TOKEN."""
+
+    import re
+
+    # 1. Fetch public contribution calendar HTML
+    contrib_url = f"https://github.com/users/{login}/contributions"
+    headers = {"User-Agent": "github-profile-svg-data-script"}
+    req = Request(contrib_url, headers=headers)
+    with urlopen(req, timeout=15) as resp:
+        html = resp.read().decode("utf-8")
+
+    sparse_days = []
+    pattern = re.compile(r'<td[^>]*data-date="([^"]+)"[^>]*data-level="([^"]+)"[^>]*>')
+    for match in pattern.finditer(html):
+        date_str, level_str = match.groups()
+        try:
+            level = max(0, min(4, int(level_str)))
+            # Estimate count from level if exact count not present: 0->0, 1->1, 2->3, 3->6, 4->10
+            count_est = 0 if level == 0 else (1 if level == 1 else (3 if level == 2 else (6 if level == 3 else 10)))
+            sparse_days.append({"date": date_str, "count": count_est, "level": level})
+        except ValueError:
+            pass
+
+    daily = fill_calendar_days(sparse_days, start_date, end_date)
+    current_streak, longest_streak = streaks(daily)
+
+    # 2. Fetch public user details
+    user_url = f"https://api.github.com/users/{login}"
+    req_user = Request(user_url, headers=headers)
+    public_repositories = 0
+    followers = 0
+    following = 0
+    avatar_url = ""
+    name = login
+    bio = ""
+
+    try:
+        with urlopen(req_user, timeout=15) as resp_user:
+            user_json = json.loads(resp_user.read().decode("utf-8"))
+            if isinstance(user_json, dict):
+                public_repositories = user_json.get("public_repos", 0)
+                followers = user_json.get("followers", 0)
+                following = user_json.get("following", 0)
+                avatar_url = user_json.get("avatar_url", "")
+                name = user_json.get("name") or login
+                bio = user_json.get("bio", "")
+    except Exception:
+        pass
+
+    # 3. Fetch public repositories for stars and languages
+    repos_url = f"https://api.github.com/users/{login}/repos?per_page=100"
+    req_repos = Request(repos_url, headers=headers)
+    total_stars = 0
+    language_bytes: Dict[str, Dict[str, Any]] = {}
+
+    try:
+        with urlopen(req_repos, timeout=15) as resp_repos:
+            repos_json = json.loads(resp_repos.read().decode("utf-8"))
+            if isinstance(repos_json, list):
+                for repo in repos_json:
+                    if not isinstance(repo, dict):
+                        continue
+                    total_stars += repo.get("stargazers_count", 0)
+                    lang = repo.get("language")
+                    if lang:
+                        entry = language_bytes.setdefault(lang, {"bytes": 0, "color": None})
+                        entry["bytes"] += 1000  # Equal weighting by repo count
+    except Exception:
+        pass
+
+    total_contributions = sum(item["count"] for item in daily)
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "source": "live",
+        "generated_at": utc_timestamp(),
+        "notice": "Public GitHub data (unauthenticated fetch).",
+        "profile": {
+            "login": login,
+            "name": name,
+            "bio": bio,
+            "url": f"https://github.com/{login}",
+            "avatar_url": avatar_url,
+            "created_at": "",
+        },
+        "calendar": {
+            "start_date": start_date.isoformat(),
+            "end_date": end_date.isoformat(),
+            "days": daily,
+            "weeks": calendar_weeks(daily, start_date, end_date),
+            "total_contributions": total_contributions,
+        },
+        "stats": {
+            "public_repositories": public_repositories,
+            "followers": followers,
+            "following": following,
+            "total_stars": total_stars,
+            "active_days": sum(1 for item in daily if item["count"] > 0),
+            "current_streak": current_streak,
+            "longest_streak": longest_streak,
+            "languages": normalized_languages(language_bytes),
+        },
+    }
+
+
 def build_fallback_payload(login: str, start_date: date, end_date: date, reason: str) -> Dict[str, Any]:
     """Build an explicit no-data payload when live data is unavailable.
 
@@ -418,16 +523,27 @@ def main() -> int:
                 data = copy.deepcopy(dict(cache))
                 outcome = f"kept compatible cache after API error ({exc})"
             else:
-                data = build_fallback_payload(login, start_date, end_date, "GitHub data could not be fetched")
-                wrote_cache = True
-                outcome = f"generated no-data state after API error ({exc})"
-    elif cache_matches(cache, login, start_date, end_date):
-        data = copy.deepcopy(dict(cache))
-        outcome = "kept compatible cache (GITHUB_TOKEN is not set)"
+                try:
+                    data = fetch_public_unauthenticated_payload(login, start_date, end_date)
+                    wrote_cache = True
+                    outcome = "fetched public GitHub data (unauthenticated fallback after API error)"
+                except Exception:
+                    data = build_fallback_payload(login, start_date, end_date, "GitHub data could not be fetched")
+                    wrote_cache = True
+                    outcome = f"generated no-data state after API error ({exc})"
     else:
-        data = build_fallback_payload(login, start_date, end_date, "GITHUB_TOKEN is not set")
-        wrote_cache = True
-        outcome = "generated no-data state (GITHUB_TOKEN is not set)"
+        try:
+            data = fetch_public_unauthenticated_payload(login, start_date, end_date)
+            wrote_cache = True
+            outcome = "fetched public live GitHub data (unauthenticated)"
+        except Exception as exc:
+            if cache_matches(cache, login, start_date, end_date):
+                data = copy.deepcopy(dict(cache))
+                outcome = f"kept compatible cache ({exc})"
+            else:
+                data = build_fallback_payload(login, start_date, end_date, "GITHUB_TOKEN is not set")
+                wrote_cache = True
+                outcome = "generated no-data state (GITHUB_TOKEN is not set)"
 
     if wrote_cache:
         write_json(args.cache, data)
