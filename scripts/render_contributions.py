@@ -197,7 +197,7 @@ def render(payload: Mapping[str, Any], static: bool = False) -> str:
     stats = payload.get("stats") if isinstance(payload.get("stats"), Mapping) else {}
     total_commits = max(2926, int(stats.get("total_commits") or cached_total))
     if source == "live":
-        metadata = f"{format_number(total_commits)} commits & contributions in total"
+        metadata = escape(f"{format_number(total_commits)} commits & contributions in total")
     else:
         metadata = "Awaiting first authenticated GitHub refresh"
     detail = escape(notice) if source != "live" and notice else ""
