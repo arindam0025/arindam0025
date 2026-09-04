@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/wordmark.svg" width="1000" alt="Terminal Header: Arindam Nag — Quantitative Finance, Algorithmic Trading, and Risk Systems" />
+  <img src="https://raw.githubusercontent.com/arindam0025/arindam0025/main/assets/wordmark.svg?v=2926" width="1000" alt="Terminal Header: Arindam Nag — Quantitative Finance, Algorithmic Trading, and Risk Systems" />
 </p>
 
 <p align="center">
-  <img src="./assets/portrait.svg" width="360" alt="Animated terminal-style gold ASCII portrait of Arindam Nag" />
+  <img src="https://raw.githubusercontent.com/arindam0025/arindam0025/main/assets/portrait.svg?v=2926" width="360" alt="Animated terminal-style gold ASCII portrait of Arindam Nag" />
 </p>
 
 <p align="center">
@@ -16,12 +16,16 @@
 
 ### 📊 `arindam0025@github ~ $ activity --contributions`
 
+```text
+Total Commits : 2,926  ·  Active Days: 328  ·  Current Streak: 80 days 🔥  ·  Longest Streak: 80 days
+```
+
 <p align="center">
-  <img src="./assets/contributions.svg" width="1000" alt="Animated GitHub contribution heatmap with pop and flash cascade effect for arindam0025" />
+  <img src="https://raw.githubusercontent.com/arindam0025/arindam0025/main/assets/contributions.svg?v=2926" width="1000" alt="Animated GitHub contribution heatmap with pop and flash cascade effect for arindam0025" />
 </p>
 
 <p align="center">
-  <img src="./assets/stats.svg" width="1000" alt="Public GitHub activity summary and language mix for arindam0025" />
+  <img src="https://raw.githubusercontent.com/arindam0025/arindam0025/main/assets/stats.svg?v=2926" width="1000" alt="Public GitHub activity summary and language mix for arindam0025" />
 </p>
 
 ---
