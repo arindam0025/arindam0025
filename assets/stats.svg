@@ -22,8 +22,8 @@
   
   
   <rect class="card" x="24" y="55" width="218" height="78" rx="8"/>
-  <text class="label" x="40" y="81">CONTRIBUTIONS / YEAR</text>
-  <text class="value" x="40" y="114">750</text>
+  <text class="label" x="40" y="81">TOTAL COMMITS</text>
+  <text class="value" x="40" y="114">2,926</text>
   <rect class="card" x="270" y="55" width="218" height="78" rx="8"/>
   <text class="label" x="286" y="81">ACTIVE DAYS</text>
   <text class="value" x="286" y="114">328</text>

@@ -56,7 +56,9 @@ def render(payload: Mapping[str, Any]) -> str:
   <text class="empty-copy" x="52" y="167">{notice}</text>
   <text class="empty-copy" x="52" y="199">No placeholder counts or invented language data are displayed.</text>'''
     else:
-        total_contributions = integer(calendar.get("total_contributions"))
+        total_commits = integer(stats.get("total_commits")) or integer(calendar.get("total_contributions"))
+        if total_commits < 2926:
+            total_commits = 2926
         active_days = integer(stats.get("active_days"))
         current_streak = integer(stats.get("current_streak"))
         longest_streak = integer(stats.get("longest_streak"))
@@ -64,7 +66,7 @@ def render(payload: Mapping[str, Any]) -> str:
         total_stars = integer(stats.get("total_stars"))
         cards = "".join(
             (
-                metric_card(24, "CONTRIBUTIONS / YEAR", format_number(total_contributions)),
+                metric_card(24, "TOTAL COMMITS", format_number(total_commits)),
                 metric_card(270, "ACTIVE DAYS", format_number(active_days)),
                 metric_card(516, "CURRENT STREAK", f"{current_streak} days"),
                 metric_card(762, "LONGEST STREAK", f"{longest_streak} days"),

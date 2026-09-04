@@ -124,7 +124,7 @@ class TestRenderers(unittest.TestCase):
             },
         }
         svg_live = render_stats.render(live_payload)
-        self.assertIn("CONTRIBUTIONS / YEAR", svg_live)
+        self.assertIn("TOTAL COMMITS", svg_live)
         self.assertIn("Python", svg_live)
 
     def test_make_wordmark(self):
