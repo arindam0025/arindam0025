@@ -131,7 +131,8 @@ def cell_svg(column: int, row: int, level: int, static: bool) -> str:
     delay = (column * COLUMN_WEIGHT) + (row * ROW_WEIGHT)
     attributes = ""
     if not static:
-        attributes = f' class="cell" style="animation-delay:{delay:.3f}s"'
+        cls = "c g" if safe_level > 0 else "c e"
+        attributes = f' class="{cls}" style="animation-delay:{delay:.3f}s"'
     return (
         f'<rect{attributes} x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
         f'rx="3" fill="{PALETTE[safe_level]}"/>'
@@ -183,19 +184,14 @@ def render(payload: Mapping[str, Any], static: bool = False) -> str:
     )
     animation_css = ""
     if not static:
-        animation_css = f"""
-  @media (prefers-reduced-motion: no-preference) {{
-    .cell {{
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: cell-pop {CELL_DURATION}s cubic-bezier(.2,.85,.25,1) both;
-    }}
-  }}
-  @keyframes cell-pop {{
-    0% {{ opacity: 0; transform: scale(.25) translateY(2px); filter: brightness(1.25); }}
-    68% {{ opacity: 1; transform: scale(1.08); filter: brightness(1.1); }}
-    100% {{ opacity: 1; transform: scale(1); filter: brightness(1); }}
-  }}
+        animation_css = """
+  @media (prefers-reduced-motion: no-preference) {
+    .c { transform-box: fill-box; transform-origin: center; opacity: 0; animation: pop 0.55s ease-out both; }
+    .g { animation: pop 0.55s ease-out both, flash 0.7s ease-out both; }
+  }
+  @keyframes pop { 0% { opacity: 0; transform: scale(.2); } 60% { opacity: 1; transform: scale(1.1); } 100% { opacity: 1; transform: scale(1); } }
+  @keyframes flash { 0% { filter: brightness(2.4); } 45% { filter: brightness(2.4); } 100% { filter: brightness(1); } }
+  @media (prefers-reduced-motion: reduce) { .c { opacity: 1 !important; animation: none !important; } }
 """
 
     if source == "live":
