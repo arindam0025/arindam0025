@@ -1,0 +1,55 @@
+name: Refresh profile activity
+
+on:
+  schedule:
+    # Staggered from the top of the hour to reduce scheduled-job congestion.
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile-${{ github.repository }}
+  # Finish a running refresh so a pending run does not discard a complete UTC-day update.
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Fetch and render live assets
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.8"
+          check-latest: false
+
+      - name: Fetch public GitHub data and render SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: |
+          python scripts/fetch_github_data.py --username "$GITHUB_USERNAME"
+          python scripts/render_contributions.py
+          python scripts/render_stats.py
+
+      - name: Commit only changed generated files
+        run: |
+          git add -- assets/contributions.svg assets/stats.svg data/github-data.json
+          if git diff --cached --quiet; then
+            echo "No live profile changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(profile): refresh live assets"
+          git push

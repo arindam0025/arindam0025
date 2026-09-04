@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 584 620" width="584" height="620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Gold ASCII owl portrait</title>
+  <desc id="desc">A gold-on-dark ASCII rendering of profile-photo.png. Rows reveal once in terminal order.</desc>
+  <style>
+    .background { fill: #090906; }
+    .frame { fill: #100e09; stroke: #665630; stroke-width: 1.25; }
+    .terminal-label, .footer { fill: #a89257; font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace; font-size: 10px; letter-spacing: .55px; }
+    .dim { fill: #77663c; font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace; font-size: 9px; }
+    .row { fill: #c9ad63; font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace; font-size: 13.2px; font-weight: 700; }
+    .cursor { fill: #d9bd6c; display: none; }
+    @media (prefers-reduced-motion: no-preference) {
+      .render-row { animation: row-print .18s ease-out both; }
+      .render-cursor { display: block; animation: cursor-finish .72s ease-out both; }
+    }
+    @keyframes row-print { 0% { opacity: 0; transform: translateX(-3px); } 100% { opacity: 1; transform: translateX(0); } }
+    @keyframes cursor-finish { 0%, 15% { opacity: 0; } 30%, 55% { opacity: 1; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .row { opacity: 1 !important; } .cursor { display: none; } }
+  </style>
+  <rect class="background" width="584" height="620" rx="12"/>
+  <rect class="frame" x="10" y="10" width="564" height="600" rx="8"/>
+  <circle cx="27" cy="29" r="4" fill="#d9bd6c"/>
+  <circle cx="41" cy="29" r="4" fill="#a89257"/>
+  <circle cx="55" cy="29" r="4" fill="#665630"/>
+  <text class="terminal-label" x="75" y="33">OWL.PORTRAIT  /  ASCII SIGNAL</text>
+  <text class="dim" x="482" y="33">66 × 40</text>
+  <path d="M20 43.5H564" stroke="#4f4329" stroke-width="1"/>
+    <text class="row render-row" xml:space="preserve" x="28" y="69.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.180s">                                                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="82.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.245s">           ==               ,=                                    </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="95.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.310s">          =##*=,==*****==,=*##+                                   </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="108.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.375s">         +**+=**=========**=+**,                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="122.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.440s">         =#+                 +#=                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="135.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.505s">         ** +*****    =****=  **                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="148.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.570s">         #= *****#=  ;#****#= =#                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="161.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.635s">         *= *****##, *#****#+ ;#                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="174.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.700s">         #= +*##*=#=.#=*#**=  =#                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="188.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.765s">         **       =*=*        **                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="201.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.830s">         *#:       *#=       +#=                                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="214.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.895s">         =#*+      =*       .*#=.                                 </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="227.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:0.960s">          ***=             =*####*=+                              </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="240.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.025s">          =#+**=+       +=*=*#*;=*##*=,                           </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="254.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.090s">           ** +=********==.=#*    :=*##*+                         </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="267.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.155s">           :*=            :##+       .=*#*=                       </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="280.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.220s">            =#=           =#*           +*#=.                     </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="293.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.285s">            .**,          =#*             +**=.                   </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="306.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.350s">             ,**.         =#*               =#*.                  </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="320.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.415s">              =#*;        ,##+               =**=                 </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="333.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.480s">               =#*;        =**,               ;**=                </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="346.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.545s">                +**=        ;**+                *#=               </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="359.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.610s">                 +**=        +**=.              ,*#=              </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="372.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.675s">                   =#*+        =*#=               *#+             </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="386.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.740s">                    +**=         =**=              **;            </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="399.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.805s">                     *##*=        :=**=            =#*            </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="412.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.870s">                     =*;*#*=        .=**=           =#=           </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="425.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:1.935s">                     **  =*#*+         =**=;        .*#+          </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="438.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.000s">                     *=    =#*      =;   =***=       =#*.         </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="452.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.065s">                     #,    =##=     =#=    :=**=;     *#=         </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="465.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.130s">                    +*     ****.    =##*+     =***=;  +#*         </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="478.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.195s">                    =*===. #==#=====*#;*#=      ;=*#*=,=#+        </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="491.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.260s">                      *##***. =*###===  =**+       *#*#*#*        </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="504.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.325s">                     =##*      =##*      ;**=,     =#=+=**        </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="518.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.390s">                    =##*.      *##+        =##*====*#*            </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="531.2" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.455s">                   =##*:      =##*          ,==**===+             </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="544.4" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.520s">              ....=##*,      =##*.                                </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="557.6" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.585s">         *############################*                           </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="570.8" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.650s">        ;==============================,                          </text>
+    <text class="row render-row" xml:space="preserve" x="28" y="584.0" textLength="528.0" lengthAdjust="spacingAndGlyphs" style="animation-delay:2.715s">                                                                  </text>
+  <text class="footer" x="28" y="608.0">&gt; render.complete</text>
+    <rect class="cursor render-cursor" x="28" y="598.0" width="7" height="12" style="animation-delay:2.780s"/>
+</svg>

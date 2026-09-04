@@ -1,0 +1,2 @@
+# Required only to regenerate assets/portrait.svg from a profile image.
+Pillow>=10.0

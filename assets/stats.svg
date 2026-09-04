@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="276" viewBox="0 0 1000 276" role="img" aria-labelledby="title desc">
+  <title id="title">Public GitHub activity summary for arindam0025</title>
+  <desc id="desc">Repository and contribution statistics generated from public GitHub data. No authenticated GitHub data yet — GITHUB_TOKEN is not set</desc>
+  <style>
+    .panel { fill: #0D1117; stroke: #30363D; }
+    .rule { stroke: #30363D; stroke-width: 1; }
+    .title { fill: #E6EDF3; font: 700 16px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    .label, .section { fill: #8B949E; font: 700 11px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; letter-spacing: .4px; }
+    .value { fill: #E6EDF3; font: 700 25px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    .card { fill: #161B22; stroke: #30363D; }
+    .language { fill: #C9D1D9; font: 12px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    .percent, .footer, .empty-copy { fill: #8B949E; font: 11px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    .bar-bg, .empty { fill: #161B22; stroke: #30363D; }
+    .empty-title { fill: #E6EDF3; font: 700 18px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+  </style>
+  <rect class="panel" x="1" y="1" width="998" height="274" rx="12"/>
+  <path class="rule" d="M24 33H976"/>
+  <circle cx="34" cy="19" r="4" fill="#F85149"/><circle cx="48" cy="19" r="4" fill="#D29922"/><circle cx="62" cy="19" r="4" fill="#3FB950"/>
+  <text class="title" x="82" y="24">public-signal / repository-summary</text>
+  <text class="footer" x="852" y="24">user: arindam0025</text>
+  
+  <rect class="empty" x="24" y="58" width="952" height="166" rx="10"/>
+  <text class="empty-title" x="52" y="105">live activity is ready to refresh</text>
+  <text class="empty-copy" x="52" y="139">Run the Refresh profile activity workflow or provide GITHUB_TOKEN locally.</text>
+  <text class="empty-copy" x="52" y="167">No authenticated GitHub data yet — GITHUB_TOKEN is not set</text>
+  <text class="empty-copy" x="52" y="199">No placeholder counts or invented language data are displayed.</text>
+</svg>
