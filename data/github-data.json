@@ -2,15 +2,9 @@
   "calendar": {
     "days": [
       {
-        "count": 1,
-        "date": "2025-09-05",
-        "level": 1,
-        "weekday": 4
-      },
-      {
-        "count": 1,
+        "count": 0,
         "date": "2025-09-06",
-        "level": 1,
+        "level": 0,
         "weekday": 5
       },
       {
@@ -2190,11 +2184,17 @@
         "date": "2026-09-04",
         "level": 4,
         "weekday": 4
+      },
+      {
+        "count": 1,
+        "date": "2026-09-05",
+        "level": 1,
+        "weekday": 5
       }
     ],
-    "end_date": "2026-09-04",
-    "start_date": "2025-09-05",
-    "total_contributions": 759,
+    "end_date": "2026-09-05",
+    "start_date": "2025-09-06",
+    "total_contributions": 758,
     "weeks": [
       {
         "days": [
@@ -2202,16 +2202,11 @@
           null,
           null,
           null,
+          null,
           {
-            "count": 1,
-            "date": "2025-09-05",
-            "level": 1,
-            "weekday": 4
-          },
-          {
-            "count": 1,
+            "count": 0,
             "date": "2025-09-06",
-            "level": 1,
+            "level": 0,
             "weekday": 5
           },
           {
@@ -4652,14 +4647,19 @@
             "level": 4,
             "weekday": 4
           },
-          null,
+          {
+            "count": 1,
+            "date": "2026-09-05",
+            "level": 1,
+            "weekday": 5
+          },
           null
         ],
         "start_date": "2026-08-31"
       }
     ]
   },
-  "generated_at": "2026-09-05T07:45:40Z",
+  "generated_at": "2026-09-06T08:00:29Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
     "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
@@ -4672,8 +4672,8 @@
   "schema_version": 1,
   "source": "live",
   "stats": {
-    "active_days": 328,
-    "current_streak": 81,
+    "active_days": 327,
+    "current_streak": 82,
     "followers": 4,
     "following": 13,
     "languages": [
@@ -4714,7 +4714,7 @@
         "percent": 6.2
       }
     ],
-    "longest_streak": 81,
+    "longest_streak": 82,
     "public_repositories": 25,
     "total_commits": 2926,
     "total_stars": 12
