@@ -2,12 +2,6 @@
   "calendar": {
     "days": [
       {
-        "count": 0,
-        "date": "2025-09-06",
-        "level": 0,
-        "weekday": 5
-      },
-      {
         "count": 1,
         "date": "2025-09-07",
         "level": 1,
@@ -2190,10 +2184,16 @@
         "date": "2026-09-05",
         "level": 1,
         "weekday": 5
+      },
+      {
+        "count": 0,
+        "date": "2026-09-06",
+        "level": 0,
+        "weekday": 6
       }
     ],
-    "end_date": "2026-09-05",
-    "start_date": "2025-09-06",
+    "end_date": "2026-09-06",
+    "start_date": "2025-09-07",
     "total_contributions": 758,
     "weeks": [
       {
@@ -2203,12 +2203,7 @@
           null,
           null,
           null,
-          {
-            "count": 0,
-            "date": "2025-09-06",
-            "level": 0,
-            "weekday": 5
-          },
+          null,
           {
             "count": 1,
             "date": "2025-09-07",
@@ -4653,13 +4648,18 @@
             "level": 1,
             "weekday": 5
           },
-          null
+          {
+            "count": 0,
+            "date": "2026-09-06",
+            "level": 0,
+            "weekday": 6
+          }
         ],
         "start_date": "2026-08-31"
       }
     ]
   },
-  "generated_at": "2026-09-06T08:00:29Z",
+  "generated_at": "2026-09-07T08:29:47Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
     "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
@@ -4673,7 +4673,7 @@
   "source": "live",
   "stats": {
     "active_days": 327,
-    "current_streak": 82,
+    "current_streak": 0,
     "followers": 4,
     "following": 13,
     "languages": [
