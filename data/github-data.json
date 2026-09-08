@@ -3,12 +3,6 @@
     "days": [
       {
         "count": 1,
-        "date": "2025-09-07",
-        "level": 1,
-        "weekday": 6
-      },
-      {
-        "count": 1,
         "date": "2025-09-08",
         "level": 1,
         "weekday": 0
@@ -2190,29 +2184,18 @@
         "date": "2026-09-06",
         "level": 0,
         "weekday": 6
+      },
+      {
+        "count": 0,
+        "date": "2026-09-07",
+        "level": 0,
+        "weekday": 0
       }
     ],
-    "end_date": "2026-09-06",
-    "start_date": "2025-09-07",
-    "total_contributions": 758,
+    "end_date": "2026-09-07",
+    "start_date": "2025-09-08",
+    "total_contributions": 757,
     "weeks": [
-      {
-        "days": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          {
-            "count": 1,
-            "date": "2025-09-07",
-            "level": 1,
-            "weekday": 6
-          }
-        ],
-        "start_date": "2025-09-01"
-      },
       {
         "days": [
           {
@@ -4656,10 +4639,27 @@
           }
         ],
         "start_date": "2026-08-31"
+      },
+      {
+        "days": [
+          {
+            "count": 0,
+            "date": "2026-09-07",
+            "level": 0,
+            "weekday": 0
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "start_date": "2026-09-07"
       }
     ]
   },
-  "generated_at": "2026-09-07T08:29:47Z",
+  "generated_at": "2026-09-08T08:12:44Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
     "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
@@ -4672,7 +4672,7 @@
   "schema_version": 1,
   "source": "live",
   "stats": {
-    "active_days": 327,
+    "active_days": 326,
     "current_streak": 0,
     "followers": 4,
     "following": 13,

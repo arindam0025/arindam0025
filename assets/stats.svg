@@ -26,7 +26,7 @@
   <text class="value" x="40" y="114">2,926</text>
   <rect class="card" x="270" y="55" width="218" height="78" rx="8"/>
   <text class="label" x="286" y="81">ACTIVE DAYS</text>
-  <text class="value" x="286" y="114">327</text>
+  <text class="value" x="286" y="114">326</text>
   <rect class="card" x="516" y="55" width="218" height="78" rx="8"/>
   <text class="label" x="532" y="81">CURRENT STREAK</text>
   <text class="value" x="532" y="114">0 days</text>
