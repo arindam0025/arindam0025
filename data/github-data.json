@@ -2,12 +2,6 @@
   "calendar": {
     "days": [
       {
-        "count": 0,
-        "date": "2025-09-13",
-        "level": 0,
-        "weekday": 5
-      },
-      {
         "count": 1,
         "date": "2025-09-14",
         "level": 1,
@@ -2190,10 +2184,16 @@
         "date": "2026-09-12",
         "level": 0,
         "weekday": 5
+      },
+      {
+        "count": 0,
+        "date": "2026-09-13",
+        "level": 0,
+        "weekday": 6
       }
     ],
-    "end_date": "2026-09-12",
-    "start_date": "2025-09-13",
+    "end_date": "2026-09-13",
+    "start_date": "2025-09-14",
     "total_contributions": 751,
     "weeks": [
       {
@@ -2203,12 +2203,7 @@
           null,
           null,
           null,
-          {
-            "count": 0,
-            "date": "2025-09-13",
-            "level": 0,
-            "weekday": 5
-          },
+          null,
           {
             "count": 1,
             "date": "2025-09-14",
@@ -4653,13 +4648,18 @@
             "level": 0,
             "weekday": 5
           },
-          null
+          {
+            "count": 0,
+            "date": "2026-09-13",
+            "level": 0,
+            "weekday": 6
+          }
         ],
         "start_date": "2026-09-07"
       }
     ]
   },
-  "generated_at": "2026-09-13T08:26:11Z",
+  "generated_at": "2026-09-14T09:06:52Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
     "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
