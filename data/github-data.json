@@ -3,12 +3,6 @@
     "days": [
       {
         "count": 1,
-        "date": "2025-09-30",
-        "level": 1,
-        "weekday": 1
-      },
-      {
-        "count": 1,
         "date": "2025-10-01",
         "level": 1,
         "weekday": 2
@@ -2190,21 +2184,22 @@
         "date": "2026-09-29",
         "level": 0,
         "weekday": 1
+      },
+      {
+        "count": 0,
+        "date": "2026-09-30",
+        "level": 0,
+        "weekday": 2
       }
     ],
-    "end_date": "2026-09-29",
-    "start_date": "2025-09-30",
-    "total_contributions": 731,
+    "end_date": "2026-09-30",
+    "start_date": "2025-10-01",
+    "total_contributions": 730,
     "weeks": [
       {
         "days": [
           null,
-          {
-            "count": 1,
-            "date": "2025-09-30",
-            "level": 1,
-            "weekday": 1
-          },
+          null,
           {
             "count": 1,
             "date": "2025-10-01",
@@ -4649,7 +4644,12 @@
             "level": 0,
             "weekday": 1
           },
-          null,
+          {
+            "count": 0,
+            "date": "2026-09-30",
+            "level": 0,
+            "weekday": 2
+          },
           null,
           null,
           null,
@@ -4659,7 +4659,7 @@
       }
     ]
   },
-  "generated_at": "2026-09-30T09:51:00Z",
+  "generated_at": "2026-10-01T10:18:46Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
     "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
@@ -4672,7 +4672,7 @@
   "schema_version": 1,
   "source": "live",
   "stats": {
-    "active_days": 304,
+    "active_days": 303,
     "current_streak": 0,
     "followers": 5,
     "following": 13,
