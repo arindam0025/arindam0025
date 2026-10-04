@@ -2,15 +2,9 @@
   "calendar": {
     "days": [
       {
-        "count": 1,
-        "date": "2025-10-03",
-        "level": 1,
-        "weekday": 4
-      },
-      {
-        "count": 1,
+        "count": 0,
         "date": "2025-10-04",
-        "level": 1,
+        "level": 0,
         "weekday": 5
       },
       {
@@ -2190,11 +2184,17 @@
         "date": "2026-10-02",
         "level": 0,
         "weekday": 4
+      },
+      {
+        "count": 0,
+        "date": "2026-10-03",
+        "level": 0,
+        "weekday": 5
       }
     ],
-    "end_date": "2026-10-02",
-    "start_date": "2025-10-03",
-    "total_contributions": 728,
+    "end_date": "2026-10-03",
+    "start_date": "2025-10-04",
+    "total_contributions": 726,
     "weeks": [
       {
         "days": [
@@ -2202,16 +2202,11 @@
           null,
           null,
           null,
+          null,
           {
-            "count": 1,
-            "date": "2025-10-03",
-            "level": 1,
-            "weekday": 4
-          },
-          {
-            "count": 1,
+            "count": 0,
             "date": "2025-10-04",
-            "level": 1,
+            "level": 0,
             "weekday": 5
           },
           {
@@ -4652,71 +4647,39 @@
             "level": 0,
             "weekday": 4
           },
-          null,
+          {
+            "count": 0,
+            "date": "2026-10-03",
+            "level": 0,
+            "weekday": 5
+          },
           null
         ],
         "start_date": "2026-09-28"
       }
     ]
   },
-  "generated_at": "2026-10-03T09:17:50Z",
+  "generated_at": "2026-10-04T09:57:28Z",
   "notice": "Public GitHub data (unauthenticated fetch).",
   "profile": {
-    "avatar_url": "https://avatars.githubusercontent.com/u/127079657?v=4",
-    "bio": null,
+    "avatar_url": "",
+    "bio": "",
     "created_at": "",
     "login": "arindam0025",
-    "name": "Arindam",
+    "name": "arindam0025",
     "url": "https://github.com/arindam0025"
   },
   "schema_version": 1,
   "source": "live",
   "stats": {
-    "active_days": 301,
+    "active_days": 299,
     "current_streak": 0,
-    "followers": 5,
-    "following": 13,
-    "languages": [
-      {
-        "bytes": 7000,
-        "color": "#3572A5",
-        "name": "Python",
-        "percent": 43.8
-      },
-      {
-        "bytes": 3000,
-        "color": "#39D353",
-        "name": "R",
-        "percent": 18.8
-      },
-      {
-        "bytes": 2000,
-        "color": "#F1E05A",
-        "name": "JavaScript",
-        "percent": 12.5
-      },
-      {
-        "bytes": 2000,
-        "color": "#3178C6",
-        "name": "TypeScript",
-        "percent": 12.5
-      },
-      {
-        "bytes": 1000,
-        "color": "#E34C26",
-        "name": "HTML",
-        "percent": 6.2
-      },
-      {
-        "bytes": 1000,
-        "color": "#DA5B0B",
-        "name": "Jupyter Notebook",
-        "percent": 6.2
-      }
-    ],
+    "followers": 0,
+    "following": 0,
+    "languages": [],
     "longest_streak": 82,
-    "public_repositories": 25,
+    "public_repositories": 0,
     "total_commits": 2926,
-    "total_stars": 12
+    "total_stars": 0
   }
 }
